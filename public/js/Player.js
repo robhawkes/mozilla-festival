@@ -6,7 +6,8 @@ var Player = function(startX, startY) {
 		y = startY,
 		id,
 		moveAmount = 2;
-
+	
+	// Getters and setters
 	var getX = function() {
 		return x;
 	};
@@ -23,6 +24,7 @@ var Player = function(startX, startY) {
 		y = newY;
 	};
 
+	// Update player position
 	var update = function(keys) {
 		// Previous position
 		var prevX = x,
@@ -45,10 +47,12 @@ var Player = function(startX, startY) {
 		return (prevX != x || prevY != y) ? true : false;
 	};
 
+	// Draw player
 	var draw = function(ctx) {
 		ctx.fillRect(x-5, y-5, 10, 10);
 	};
 
+	// Define which variables and methods can be accessed
 	return {
 		getX: getX,
 		getY: getY,

@@ -6,6 +6,7 @@ var Player = function(startX, startY) {
 		y = startY,
 		id;
 
+	// Getters and setters
 	var getX = function() {
 		return x;
 	};
@@ -22,6 +23,7 @@ var Player = function(startX, startY) {
 		y = newY;
 	};
 
+	// Define which variables and methods can be accessed
 	return {
 		getX: getX,
 		getY: getY,
@@ -31,4 +33,6 @@ var Player = function(startX, startY) {
 	}
 };
 
+// Export the Player class so you can use it in
+// other files by using require("Player").Player
 exports.Player = Player;
