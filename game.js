@@ -57,7 +57,7 @@ function onSocketConnection(client) {
 
 	// Listen for move player message
 	client.on("move player", onMovePlayer);
-}
+};
 
 // Socket client has disconnected
 function onClientDisconnect() {
